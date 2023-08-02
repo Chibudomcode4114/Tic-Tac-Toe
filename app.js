@@ -19,3 +19,5 @@ const drawboard = () => {
         box.style = styleString;
     })
 }
+
+drawboard();
