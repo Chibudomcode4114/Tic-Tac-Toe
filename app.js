@@ -93,10 +93,12 @@ const restart = () => {
     })
     boxes.forEach((box, index) => {
         box.innerText = '';
+        box.addEventListener('click', boxClicked); // Add this line
     })
     playText.innerText = 'Let\'s Play';
     currentPlayer = playerOne_TEXT;
 }
+
 restartBtn.addEventListener('click', restart);
 restart();
 
